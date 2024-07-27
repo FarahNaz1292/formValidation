@@ -1,12 +1,11 @@
 function validate(){
   const name = document.getElementById("name").value;
-  console.log(name);
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const subject = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-  const confirmPassword = document.getElementById("confirmPassword");
-  const checkBox = document.getElementById("terms");
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  const checkBox = document.getElementById("terms").value;
   function showError(message) {
     //reuseable function
     const errorElement = document.getElementById("demo");
@@ -41,7 +40,7 @@ function validate(){
     return false;
   }
   if (password.trim() <= 6) {
-    showError("Please enter a password upto 6 charcaters");
+    showError("Please enter a password upto 6 characters");
   }
   if (confirmPassword === password) {
     errorElement("Passwords do not match");

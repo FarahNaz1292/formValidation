@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registration Form </title>
-        <link rel="stylesheet" href="style.css">
-
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
     <body>
         <div class="container">
-            <h1>USER REGISTRATION FORM</h1>
+            <h1>USER REGSTRATION FORM</h1>
             <form action="" id="form" onsubmit="return validate()">
                 <label for="name">Name</label>
                 <input type="text" placeholder="Please enter your name" id="name">
 
-                <label for="email">Email</label>
-                <input type="email" placeholder="Please enter your email" id="email">
+            <label for="email">E-mail</label>
+            <input type="text" id="email">
 
-                <label for="phone">Phone Number</label>
-                <input type="phone" placeholder="Please enter your phone number" id="number">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone">
 
-                <label for="subject">Subject</label>
-                <select id="subject">
-                    <option value="0">Select</option>
-                    <option value="1">HTML</option>
-                    <option value="2">JavaScript</option>
-                    <option value="3">CSS</option>
-                    <option value="4">JSP</option>
-                </select>
+            <label for="subject">Subject</label>
+            <select id="subject">
+                <option value="0" selected>Select</option>
+                <option value="1">HTML</option>
+                <option value="2">JavaScript</option>
+                <option value="3">CSS</option>
+                <option value="4">JSP</option>
+
+            </select>
 
                 <label for="password">Password</label>
-                <input type="password" placeholder="Please create your password" id="password">
+                <input type="password" placeholder="Plaese create your password" id="password">
 
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" placeholder="Please re-enter your password" id="confirmPassword">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword">
 
-                <input type="checkbox" name="checkbox" id="checkbox">I agree with <a href="">terms and conditions</a>
-                <p id="demo"></p>
-                <input type="submit" id="submit">
-            </form>
-        </div>
-     <script src="script.js"></script>
-    </body>
+            <label for="terms">
+                <input type="checkbox" id="terms">I Agree to the <a href="">terms and condition</a>
+            </label>
+
+            <p id="demo"></p>
+            <input type="submit" id="submit">
+
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
 
 </html>
